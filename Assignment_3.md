@@ -451,3 +451,71 @@ _**Outcome**_
 
 - Actionable insights for data collection and augmentation strategies.
 - Reduced bias in training, ensuring fair representation of all topics.
+
+## System Requirements
+
+### EPIC_3_REQ_02:
+
+**As** AI developer
+**I want** the system to automatically analyze the training dataset 
+**To** detect class imbalances and possible biases
+
+#### Purpose
+
+Automatically analyze the training dataset to detect class imbalances and potential biases based on predefined metrics, ensuring a balanced and fair dataset for model training.
+
+### Tasks
+
+#### Task_01: Implement an automated analysis process to evaluate the training dataset for class imbalances and biases
+
+_**Solution**_
+
+```bash
+analyzeClassDistribution(dataset: list<object>, classColumn: string) → dict
+```
+
+```bash
+detectClassImbalance(classDistribution: dict, threshold: float) → boolean
+```
+
+```bash
+detectBiasBasedOnMetrics(dataset: list<object>, metrics: list<string>) → list<object>
+```
+
+_**Outcome**_
+
+- Automatic detection of class imbalances based on the distribution of categories in the dataset.
+- Identification of biases related to predefined metrics, ensuring fair and equitable data
+
+### EPIC_3_REQ_03:
+
+**As** AI developer
+**I want** the system to provide visualization tools and generate reports
+**To** easily identify behaviors in data and take necessary corrective actions
+
+#### Purpose
+
+Provide visualization tools and generate detailed reports to analyze dataset distribution, bias indicators, and identify underrepresented categories, enabling better decision-making and improving dataset quality for training models.
+
+### Tasks
+
+#### Task_01: Implement visualization tools and reporting functionality
+
+_**Solution**_
+
+```bash
+generateDistributionVisualization(dataset: list<object>, categories: list<string>) → graph
+```
+
+```bash
+generateBiasIndicatorVisualization(dataset: list<object>, metrics: list<string>) → graph
+```
+
+```bash
+generateUnderrepresentationReport(dataset: list<object>, threshold: float) → string
+```
+
+**_Outcome_**
+
+- Clear and actionable insights through visualizations and reports, helping identify issues in dataset distribution, biases, and underrepresentation.
+- Improved data quality by visualizing class imbalances and biases.
