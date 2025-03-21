@@ -211,3 +211,128 @@ It is assumed that the training model does not have questions categorized accord
 - Do you have categories and/or subcategories to classify the questions?
 - Based on the history of questions, what are the most common topics?
 - Have you previously tried to implement categorization of questions? If so, how did you do it and what was the result?
+
+## REQUIREMENTS
+
+## Functional Requirements
+
+### EPIC_2_REQ_01:
+
+**As** AI developer
+**I want** to define a clear and structured list of topics to categorize questions
+**To** improve the organization, retrieval, and classification of training data
+
+#### Purpose
+
+The system should provide a predefined, structured list of topics to categorize training questions efficiently
+
+### Tasks
+
+#### Task_01: Create a predefined list of topics and subtopics based on the subject matter
+
+**_Solution_**
+
+```bash
+defineTopicList(topics: list<string>) → boolean
+```
+
+```bash
+assignTopicToQuestion(questionId: int, topicId: int) → boolean
+```
+
+**_Outcome_**
+
+- Ensures consistency, improves data organization, and enhances the accuracy of the AI model by grouping related questions under well-defined topics.
+
+
+#### Task_02: Store and manage the topic list in a structured format
+
+**_Solution_**
+
+```bash
+storeTopicList(topics: list<object>) → boolean
+```
+
+```bash
+updateTopic(topicId: int, newName: string, parentTopicId: int) → boolean
+```
+
+```bash
+getTopicList() → list<object>
+```
+
+_**Outcome**_
+
+- Efficient storage and retrieval of topic lists in a structured format
+
+### EPIC_2_REQ_02:
+
+**As** AI developer
+**I want** to ensure that the model classifies questions correctly
+**To** improve the accuracy and consistency of topic categorization.
+
+####  Purpose
+
+Ensure that the model correctly classifies questions into predefined categories, improving structured learning and optimizing training accuracy.
+
+### Tasks
+
+#### Task_01: Implement an evaluation mechanism to measure and validate the model’s classification accuracy
+
+**_Solution_**
+
+```bash
+preprocessQuestion(questionText: string) → string
+```
+
+```bash
+extractFeatures(questionText: string) → vector
+```
+
+```bash
+classifyQuestion(questionText: string) → topicId
+```
+
+```bash
+evaluateModel(predictions: list<int>, groundTruth: list<int>) → dict
+```
+
+_**Outcome**_
+
+- Automated classification enabling real-time assignment of questions to correct topics.
+
+### EPIC_2_REQ_03:
+
+**As** AI developer
+**I want** the system to provide an interface for categorizing training questions
+**To** streamline the organization and management of the training dataset
+
+#### Purpose
+
+Provide an interface that allows users to categorize training questions efficiently, ensuring structured organization and better learning outcomes.
+
+### Tasks
+
+#### Task_01: Design and implement a graphical user interface (GUI) for categorizing and reviewing training questions
+
+**_Solution_**
+
+```bash
+renderCategoryInterface(containerId: string) → void
+```
+
+```bash
+assignCategoryToQuestion(questionId: int, categoryIds: list<int>) → boolean
+```
+
+```bash
+fetchQuestionsByCategory(categoryId: int) → list<object>
+```
+
+```bash
+updateQuestionCategory(questionId: int, categoryIds: list<int>) → boolean
+```
+
+**_Outcome_**
+
+- User-friendly interface for efficiently categorizing training questions.
