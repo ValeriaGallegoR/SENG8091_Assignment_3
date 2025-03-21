@@ -57,3 +57,62 @@ _**Outcome**_
 
 - A structured and normalized data format ensuring a clear separation between questions and answers.
 - Efficient retrieval through unique identifiers (**id**, **question_id**).
+
+### EPIC_1_REQ_02:
+
+**As** AI developer
+**I want** the system to establish a mechanism to link questions to the correct answers
+**To** ensure that each question is matched with the correct answer
+
+#### Purpose
+
+Establish a mechanism to link questions with their correct answers, ensuring data integrity and efficient retrieval.
+
+### Tasks
+
+#### Task_01: Implement a function to create and store associations between questions and their corresponding answers
+
+_**Solution**_
+
+```bash
+linkAnswerToQuestion(questionId: int, answerId: int) → boolean
+```
+
+```bash
+getCorrectAnswerByQuestionId(questionId: int) → string
+```
+
+```bash
+validateAnswer(questionId: int, answerId: int) → boolean
+```
+
+_**Outcome**_
+
+- Clear linkage between questions and their correct answers through unique identifiers (**question_id**).
+
+### EPIC_1_REQ_03:
+
+**As** a AI developer
+**I want** to have a graphical interface 
+**To** manage training questions and answers
+
+#### Purpose
+
+Develop a graphical interface (GUI) that allows users to create, update, delete, and manage questions and answers efficiently.
+
+### Tasks
+
+#### Task_01: Develop a graphical interface to manage the questions and answers
+
+**_Solution
+
+Frontend_**
+
+- QuestionForm: Form for adding/editing questions
+- AnswerForm: Form for adding/editing answers
+- QuestionList: Displays a list of questions
+- AnswerList: Displays associated answers
+
+_**Outcome**_
+
+- Interactive GUI for managing questions and answers
