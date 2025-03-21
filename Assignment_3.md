@@ -194,3 +194,20 @@ _**Outcome**_
 
 - RESTful or GraphQL API enables easy management of questions and answers.
 - Scalability to support complex CRUD operations and filtering.
+
+# EPIC_2 : Categorize questions
+
+**As** AI developer 
+**I want** categorize training questions according to predefined topics 
+**To** structure the learning process in a better way and increase the accuracy of the model
+
+### Assumptions
+
+It is assumed that the training model does not have questions categorized according to predefined topics
+
+### Validations
+
+- How are the questions currently organized? Under what criteria?
+- Do you have categories and/or subcategories to classify the questions?
+- Based on the history of questions, what are the most common topics?
+- Have you previously tried to implement categorization of questions? If so, how did you do it and what was the result?
