@@ -414,3 +414,40 @@ It is assumed that there is no system to identify if there is any bias or “unb
 - What kind of biases are considered most critical?
 - Which biases can be omitted and under which criteria?
 - Have you tried to implement a system that identifies and classifies data biases according to their impact? If so, how did you do it and what was the result?
+
+## REQUIREMENTS
+
+## Functional Requirements
+
+### EPIC_3_REQ_01:
+
+**As** AI developer
+**I want** to analyze the distribution of training data across categories or topics and detect any imbalances
+**To** ensure the training dataset is well-balanced and avoid biases in model predictions.
+
+#### Purpose
+
+Ensure balanced training data by identifying whether certain topics or data categories are underrepresented or overrepresented, improving model performance and reducing bias.
+
+### Tasks
+
+#### Task_01: Implement a function to compute and report the distribution of data across different categories and identify any underrepresented or overrepresented topics
+
+_**Solution**_
+
+```bash
+analyzeTopicDistribution(dataset: list<object>) → dict
+```
+
+```bash
+detectImbalances(topicDistribution: dict, threshold: float) → list<object>
+```
+
+```bash
+generateReport(imbalances: list<object>) → string
+```
+
+_**Outcome**_
+
+- Actionable insights for data collection and augmentation strategies.
+- Reduced bias in training, ensuring fair representation of all topics.
