@@ -336,3 +336,58 @@ updateQuestionCategory(questionId: int, categoryIds: list<int>) → boolean
 **_Outcome_**
 
 - User-friendly interface for efficiently categorizing training questions.
+
+## System Requirements
+
+### EPIC_2_REQ_04:
+
+**As** AI developer
+**I want** to implement a system that organizes and stores queries in a searchable and efficient 
+**To** make them easily searchable and efficient
+
+#### Purpose
+
+Implement a system that efficiently organizes and stores training questions, ensuring fast retrieval, categorization, and searchability to support structured learning and model training.
+
+### Tasks
+
+#### Task_01: Implement Database Functions for Question Storage and Retrieval
+
+**_Solution_**
+
+```bash
+storeQuestion(questionText: string, categoryId: int) → int
+```
+
+```bash
+searchQuestions(query: string, categoryId: int, limit: int, offset: int) → list<object>
+```
+
+```bash
+updateQuestion(questionId: int, questionText: string, categoryId: int) → boolean
+```
+
+```bash
+deleteQuestion(questionId: int) → boolean
+```
+
+**_Outcome_**
+
+- Structured and efficient storage of questions.
+- CRUD operations for question management ensuring flexibility.
+
+#### Task_02: Develop API for Managing Questions
+
+_**Solution**_
+
+**API Endpoints**
+
+- Create Question: _**POST /questions**_ 
+- Search Questions: _**GET /questions?query=text&category=1**_ 
+- Update Question: **_PUT /questions/:id_** 
+- Delete Question: **_DELETE /questions/:id_** 
+
+_**Outcome**_
+
+- Efficient categorization for structured organization.
+- External accessibility for question management via API.
