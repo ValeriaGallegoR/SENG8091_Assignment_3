@@ -116,3 +116,81 @@ Frontend_**
 _**Outcome**_
 
 - Interactive GUI for managing questions and answers
+
+## System Requirements
+
+### EPIC_1_REQ_04:
+
+**As** AI developer
+**I want** the system to be optimized to handle large data sets of training questions and answers
+**To** ensure fast data processing, minimize latency and support scalability.
+
+#### Purpose
+
+Optimize system performance to efficiently handle large datasets of training questions and answers, ensuring fast retrieval, storage, and processing.
+
+### Tasks
+
+#### Task_01: Implement performance optimizations to handle large volumes of training data efficiently
+
+**_Solution_**
+
+```bash
+fetchQuestionsPaginated(limit: int, offset: int) → list<object>
+```
+
+```bash
+cacheQuestionData(questionId: int) → boolean
+```
+
+```bash
+batchInsertAnswers(answers: list<object>) → boolean
+```
+
+```bash
+optimizeDatabaseIndexes() → void
+```
+
+_**Outcome**_
+
+- Faster query execution through indexing and optimized queries.
+- Reduced database load with caching and asynchronous processing.
+
+### EPIC_1_REQ_05:
+
+**As** AI developer
+**I want** to develop a REST or GraphQL API for CRUD operations on questions and answers
+**To** enable efficient management, retrieval and modification of training data in the system
+
+#### Purpose
+
+Develop a REST or GraphQL API to enable CRUD (Create, Read, Update, Delete) operations for managing questions and answers, allowing seamless interaction between the frontend and the backend.
+
+### Tasks
+
+#### Task_01: Develop a REST API or GraphQL API for CRUD operations on questions and answers
+
+**_Solution
+
+Backend_**
+
+```bash
+createQuestionWithAnswers(questionText: string, answers: list<string>) → object
+```
+
+```bash
+getQuestionWithAnswers(questionId: int) → object
+```
+
+```bash
+updateQuestionAnswer(questionId: int, questionText: string, answers: list<object>) → boolean
+```
+
+```bash
+deleteQuestionWithAnswers(questionId: int) → boolean
+```
+
+_**Outcome**_
+
+- RESTful or GraphQL API enables easy management of questions and answers.
+- Scalability to support complex CRUD operations and filtering.
