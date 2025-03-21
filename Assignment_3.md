@@ -1,7 +1,9 @@
 # EPIC_1 : Separate questions and answers
 
 **As** AI developer
+
 **I want** separate training questions from answers 
+
 **To** facilitate the ability to evaluate and validate knowledge thus identifying areas for improvement
 
 ### Assumptions
@@ -24,7 +26,9 @@ Assume that the training model does not currently have a separate question and a
 ### EPIC_1_REQ_01:
 
 **As** AI developer
+
 **I want** to define a format for storing data that separates questions and answers
+
 **To** improve data organization
 
 #### Purpose
@@ -61,7 +65,9 @@ _**Outcome**_
 ### EPIC_1_REQ_02:
 
 **As** AI developer
+
 **I want** the system to establish a mechanism to link questions to the correct answers
+
 **To** ensure that each question is matched with the correct answer
 
 #### Purpose
@@ -93,7 +99,9 @@ _**Outcome**_
 ### EPIC_1_REQ_03:
 
 **As** a AI developer
+
 **I want** to have a graphical interface 
+
 **To** manage training questions and answers
 
 #### Purpose
@@ -122,7 +130,9 @@ _**Outcome**_
 ### EPIC_1_REQ_04:
 
 **As** AI developer
+
 **I want** the system to be optimized to handle large data sets of training questions and answers
+
 **To** ensure fast data processing, minimize latency and support scalability.
 
 #### Purpose
@@ -159,7 +169,9 @@ _**Outcome**_
 ### EPIC_1_REQ_05:
 
 **As** AI developer
+
 **I want** to develop a REST or GraphQL API for CRUD operations on questions and answers
+
 **To** enable efficient management, retrieval and modification of training data in the system
 
 #### Purpose
@@ -199,7 +211,9 @@ _**Outcome**_
 # EPIC_2 : Categorize questions
 
 **As** AI developer 
+
 **I want** categorize training questions according to predefined topics 
+
 **To** structure the learning process in a better way and increase the accuracy of the model
 
 ### Assumptions
@@ -220,7 +234,9 @@ It is assumed that the training model does not have questions categorized accord
 ### EPIC_2_REQ_01:
 
 **As** AI developer
+
 **I want** to define a clear and structured list of topics to categorize questions
+
 **To** improve the organization, retrieval, and classification of training data
 
 #### Purpose
@@ -269,7 +285,9 @@ _**Outcome**_
 ### EPIC_2_REQ_02:
 
 **As** AI developer
+
 **I want** to ensure that the model classifies questions correctly
+
 **To** improve the accuracy and consistency of topic categorization.
 
 ####  Purpose
@@ -305,7 +323,9 @@ _**Outcome**_
 ### EPIC_2_REQ_03:
 
 **As** AI developer
+
 **I want** the system to provide an interface for categorizing training questions
+
 **To** streamline the organization and management of the training dataset
 
 #### Purpose
@@ -343,7 +363,9 @@ updateQuestionCategory(questionId: int, categoryIds: list<int>) → boolean
 ### EPIC_2_REQ_04:
 
 **As** AI developer
+
 **I want** to implement a system that organizes and stores queries in a searchable and efficient 
+
 **To** make them easily searchable and efficient
 
 #### Purpose
@@ -397,7 +419,9 @@ _**Outcome**_
 # EPIC_3: Ensure that the data used is “balanced”
 
 **As** AI developer 
+
 **I want** Investigate the data used to train the model to identify possible unbalanced or biased data 
+
 **To** ensure that the model is accurate and optimal
 
 ### Assumptions
@@ -422,7 +446,9 @@ It is assumed that there is no system to identify if there is any bias or “unb
 ### EPIC_3_REQ_01:
 
 **As** AI developer
+
 **I want** to analyze the distribution of training data across categories or topics and detect any imbalances
+
 **To** ensure the training dataset is well-balanced and avoid biases in model predictions.
 
 #### Purpose
@@ -457,7 +483,9 @@ _**Outcome**_
 ### EPIC_3_REQ_02:
 
 **As** AI developer
+
 **I want** the system to automatically analyze the training dataset 
+
 **To** detect class imbalances and possible biases
 
 #### Purpose
@@ -490,7 +518,9 @@ _**Outcome**_
 ### EPIC_3_REQ_03:
 
 **As** AI developer
+
 **I want** the system to provide visualization tools and generate reports
+
 **To** easily identify behaviors in data and take necessary corrective actions
 
 #### Purpose
