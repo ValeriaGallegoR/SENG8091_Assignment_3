@@ -195,6 +195,7 @@ _**Outcome**_
 - RESTful or GraphQL API enables easy management of questions and answers.
 - Scalability to support complex CRUD operations and filtering.
 
+
 # EPIC_2 : Categorize questions
 
 **As** AI developer 
@@ -391,3 +392,25 @@ _**Outcome**_
 
 - Efficient categorization for structured organization.
 - External accessibility for question management via API.
+
+
+# EPIC_3: Ensure that the data used is “balanced”
+
+**As** AI developer 
+**I want** Investigate the data used to train the model to identify possible unbalanced or biased data 
+**To** ensure that the model is accurate and optimal
+
+### Assumptions
+
+It is assumed that there is no system to identify if there is any bias or “unbalance” in the data used for training.
+
+### Validations
+
+- How do you perform mass data collection?
+- Do you currently have a system for identifying and depuration of the data?
+- Have you identified any technical challenges when using web scraping? Describe.
+- How do you currently handle the process of frequent data updates? Does it require additional infrastructure?
+- Have you faced any security risks due to the use of web scraping? Explain.
+- What kind of biases are considered most critical?
+- Which biases can be omitted and under which criteria?
+- Have you tried to implement a system that identifies and classifies data biases according to their impact? If so, how did you do it and what was the result?
